@@ -7,3 +7,4 @@ RUN useradd -d /home/jenkins -g jenkins -u 10000 jenkins
 RUN yum install -y rpm-build
 
 USER 10000
+RUN rpmbuild
