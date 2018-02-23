@@ -7,5 +7,5 @@ RUN useradd -d /home/jenkins -g jenkins -u 10000 jenkins
 RUN yum install -y rpm-build
 
 USER 10000
-RUN mkdir -p ~/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
+RUN mkdir -p /home/jenkins/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
 
