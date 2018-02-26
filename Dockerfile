@@ -4,7 +4,7 @@ LABEL maintainer="Igor Kolomiyets <igor.kolomiyets@iktech.io>"
 RUN groupadd -g 10000 jenkins
 RUN useradd -d /home/jenkins -g jenkins -u 10000 jenkins
 
-RUN yum install -y rpm-build
+RUN yum install -y rpm-build wget
 
 USER 10000
 RUN mkdir -p /home/jenkins/rpmbuild/{BUILD,RPMS,SOURCES,SPECS,SRPMS}
